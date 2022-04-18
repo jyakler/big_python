@@ -63,3 +63,18 @@ content
     ▪ 바이트열 형식으로 응답 콘텐츠 추출
     ▪ 응답 콘텐츠가 이미지와 같은 바이너리 형식인 경우 사용
     ▪ 한글이 들어간 문자열 형식인 경우 r.content.decode('utf-8')를 사용해서 디코드 해야 함
+
+## BeautifulSoup
+
+    from bs4 import BeautifulSoup
+    #해당 4가지중 하나로 파싱(Parse)해야함 - 다른 파서 이용해도됨
+    bs = BeautifulSoup(html_doc, 'html.parser')
+    bs = BeautifulSoup(html_doc, 'lxml')
+    bs = BeautifulSoup(html_doc, 'lxml-xml')
+    bs = BeautifulSoup(html_doc, 'html5lib')
+    bs.태그명.태그명. ... 
+    bs.태그명.string.strip() -앞뒤 공백 분리문자들 제거해서 보여줌(strip)
+    
+    find_all(name=None, attrs={}, recursive=True, text=None, limit=None, **kwargs) -bs4.element.ResultSet 객체 리턴
+    find(name=None, attrs={}, recursive=True, text=None, **kwargs) - bs4.element.Tag 객체 리턴
+    select(selector, namespaces=None, limit=None, **kwargs) - list 객체 리턴
