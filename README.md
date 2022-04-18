@@ -78,3 +78,7 @@ content
     find_all(name=None, attrs={}, recursive=True, text=None, limit=None, **kwargs) -bs4.element.ResultSet 객체 리턴
     find(name=None, attrs={}, recursive=True, text=None, **kwargs) - bs4.element.Tag 객체 리턴
     select(selector, namespaces=None, limit=None, **kwargs) - list 객체 리턴
+
+### re
+    
+    re.compile("정규표현식")- 정규표현식으로 문자열 사용하고자할때 치환할때 
