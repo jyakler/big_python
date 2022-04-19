@@ -96,6 +96,12 @@ content
 ## selenium -동적
 다양한 플랫폼과 언어를 지원하는 이용하는 브라우저 자동화 도구 모음
 
+브라우저 띄우지 않기
+    
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('window-size=1920x1080') -사이즈 조절
+
 from selenium.webdriver.common.by import By 
 
     driver = webdriver.Chrome('C:/Temp/chromedriver') - 웹드라이버 객체 생성
