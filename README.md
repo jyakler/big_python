@@ -99,7 +99,8 @@ content
 from selenium.webdriver.common.by import By 
 
     driver = webdriver.Chrome('C:/Temp/chromedriver') - 웹드라이버 객체 생성
-    driver.get('http://www.google.com/ncr', 시간) -페이지 가져오기
+    driver.implicitly_wait(숫자) - 견고성 확보
+    driver.get('http://www.google.com/ncr') -페이지 가져오기
     
     #id찾기
     driver.find_element_by_id('')
