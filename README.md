@@ -141,4 +141,4 @@ from selenium.webdriver.common.by import By
     개체.click() 
 캡처
 
-    driver.get_screenshot_as_file('')
+    driver.get_screenshot_as_file('경로')
