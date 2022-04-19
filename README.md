@@ -104,7 +104,7 @@ content
 
 from selenium.webdriver.common.by import By 
 
-    driver = webdriver.Chrome('C:/Temp/chromedriver') - 웹드라이버 객체 생성
+    driver = webdriver.Chrome('C:/Temp/chromedriver',options=옵션) - 웹드라이버 객체 생성 (옵션은 선택)
     driver.implicitly_wait(숫자) - 견고성 확보
     driver.get('http://www.google.com/ncr') -페이지 가져오기
     
