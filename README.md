@@ -92,3 +92,45 @@ content
 ### re
     
     re.compile("정규표현식")- 정규표현식으로 문자열 사용하고자할때 치환할때 
+
+## selenium
+다양한 플랫폼과 언어를 지원하는 이용하는 브라우저 자동화 도구 모음
+
+from selenium.webdriver.common.by import By 
+
+    driver = webdriver.Chrome('C:/Temp/chromedriver') - 웹드라이버 객체 생성
+    driver.get('http://www.google.com/ncr', 시간) -페이지 가져오기
+    
+    #id찾기
+    driver.find_element_by_id('')
+    byId = driver.find_element(by=By.ID, value='')
+    
+    #class 찾기
+    target = driver.find_element_by_class_name('')
+    target = driver.find_element(By.CLASS_NAME, "")
+    
+    #태그명
+    byTagName = driver.find_element_by_tag_name('h1') 
+    byTagName = driver.find_element(By.TAG_NAME, 'h1')
+    
+    #링크 텍스트  - <a href="https://www.python.org/">파이썬 학습 사이트</a>
+    byLinkText = driver.find_element_by_link_text('파이썬 학습 사이트')
+    byLinkText = driver.find_element(By.LINK_TEXT, '파이썬 학습 사이트')
+    byLinkText = driver.find_elements_by_partial_link_text('사이트') -부분
+    byLinkText = driver.find_element(By.PARTIAL_LINK_TEXT, '사이트') -부분
+    
+    #css 선택자
+    byCss1 = driver.find_element_by_css_selector('') 
+    byCss1 = driver.find_element(By.CSS_SELECTOR, 'section>h2')
+    
+    #xpath
+    byXpath1 = driver.find_element_by_xpath('//*[@id="f_subtitle"]')
+    byXpath1 = driver.find_element(By.XPATH, '//*[@id="f_subtitle"]')
+
+
+    # 태그명
+    element.tag_name
+    # 텍스트 형식의 콘텐츠
+    element.text
+    # 속성값
+    element.get_attribute('속성명')
