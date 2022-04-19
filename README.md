@@ -135,8 +135,10 @@ from selenium.webdriver.common.by import By
     element.text
     # 속성값
     element.get_attribute('속성명')
-
 클릭
     
     driver.execute_script("arguments[0].click();", 개체)
     개체.click() 
+캡처
+
+    driver.get_screenshot_as_file('')
