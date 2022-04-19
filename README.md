@@ -74,7 +74,7 @@ content
     ▪ 응답 콘텐츠가 이미지와 같은 바이너리 형식인 경우 사용
     ▪ 한글이 들어간 문자열 형식인 경우 r.content.decode('utf-8')를 사용해서 디코드 해야 함  (선 - content 후 - decode)
 
-## BeautifulSoup
+## BeautifulSoup -정적
 
     from bs4 import BeautifulSoup
     #해당 4가지중 하나로 파싱(Parse)해야함 - 다른 파서 이용해도됨
@@ -93,7 +93,7 @@ content
     
     re.compile("정규표현식")- 정규표현식으로 문자열 사용하고자할때 치환할때 
 
-## selenium
+## selenium -동적
 다양한 플랫폼과 언어를 지원하는 이용하는 브라우저 자동화 도구 모음
 
 from selenium.webdriver.common.by import By 
@@ -135,3 +135,8 @@ from selenium.webdriver.common.by import By
     element.text
     # 속성값
     element.get_attribute('속성명')
+
+클릭
+    
+    driver.execute_script("arguments[0].click();", 개체)
+    개체.click() 
