@@ -36,14 +36,17 @@ __urllib.parse 모듈__
    - Query 문자열을 포함하여 요청 ex)urllib.request.urlopen(url)  : url=http://.../..?etc
    
     urllib.request.urlopen(url).info().get_content_charset() : 해당 웹사이트의 meta charset를 알고 싶을때
-
+    urllib.request.Request(url) - url을 get,post로 받아온 형태를 리턴
+    urllib.request.urlopen(geturl) -get으로 받아온 geturl을 내용으로 추출한것을 리턴
+    
 ▪ POST 방식 요청 : 요청 파라미터
 
    - 요청 바디안에 요청 파라미터를 포함 ex)urllib.request.urlopen(url, data) : data = data.encode(‘ascii’)
 
     urllib.parse.urlparse()
     urllib.parse.urlencode()
-
+    urllib.parse.quote_plus() : 한글을 encode식으로 변환
+    
   ***
 http.client.HTTPResponse 클래스
 
