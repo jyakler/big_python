@@ -26,7 +26,8 @@
 
 __urllib.request 모듈__
 
-  urlopen- http.client.HTTPResponse 반환
+      urlopen- http.client.HTTPResponse 반환
+      urlretrieve(url,"경로") - url내용을 경로에 저장 
   
 __urllib.parse 모듈__
 
