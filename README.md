@@ -159,3 +159,6 @@ from selenium.webdriver.common.by import By
     driver.execute_script("var su = arguments[0]; var dom=document.querySelectorAll(); dom.scrollIntoView();", 개체)
     #캡처
     driver.get_screenshot_as_file('경로')
+
+
+### pandas
