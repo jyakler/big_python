@@ -9,6 +9,10 @@
     b : 셀 아래로 새로운 셀 추기
     dd : 셀 지우기
 
+파이썬 정규표현식
+
+![정규표현식](https://user-images.githubusercontent.com/49812691/164121211-c70b463b-52a2-4715-8f37-843bc10a7d21.PNG)
+
 
 ## 1.urllib 패키지
 
