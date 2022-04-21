@@ -162,3 +162,10 @@ from selenium.webdriver.common.by import By
 
 
 ### pandas
+
+    df.drop(행열이름 또는 배열, axis=0/1) - 행/열 삭제 0=행 1=열
+    df.rename(index={기존인덱스:새로운인덱스},columns={기존이름:새이름}) - 이름바꾸기 - 원본에서도 저장할거면 inplace=True 해줘야함
+    
+    #행 선택
+    df.loc[행인덱스이름,열] - 행만을 검색할때는 [[행인덱스이름]] 사용
+    df.iloc[행인덱스,열]
