@@ -169,3 +169,6 @@ from selenium.webdriver.common.by import By
     #행 선택
     df.loc[행인덱스이름,열] - 행만을 검색할때는 [[행인덱스이름]] 사용
     df.iloc[행인덱스,열]
+
+    #열의 값을 인덱스로 바꾸기
+    df.set_index(열이름',inplace=True)
