@@ -172,3 +172,9 @@ from selenium.webdriver.common.by import By
 
     #열의 값을 인덱스로 바꾸기
     df.set_index(열이름',inplace=True)
+    #인덱스 초기화
+    df.reset_index()
+    
+    #정렬
+    df.sort_index(ascending=True)
+    df.sort_values(by='칼럼이름',ascending=True)
