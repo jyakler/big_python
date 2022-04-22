@@ -182,3 +182,11 @@ from selenium.webdriver.common.by import By
     #객수 확인
     df.count() - 열의 데이터 개수 확인
     df['열이름'].value_counts() - 열이름 열의 고유 값의 개수 확인
+
+    #plot
+    df.plot() / series.plot()- 그래프 작성
+    plot.set_xticklabels()- x축이름 변경
+    
+### matplotlib
+    
+    matplotlib.pyplot.savefig('경로') - plot저장하기
