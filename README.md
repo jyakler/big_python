@@ -188,6 +188,22 @@ from selenium.webdriver.common.by import By
     plot.set_xticklabels()- x축이름 변경
     
 ### matplotlib - 시각화 라이브러리 
+   한글폰트 등록예시
+   
+    import sys                                               ## 파이썬 엔진에 대한 정보를 관리하는 모듈을 사용한다. 
+    from matplotlib import font_manager, rc                  ## 폰트를 관리하는 함수와 설정 함수를 사용한다. 
+
+    if sys.platform  == 'darwin':                             ## MAC OS의 이름을 확인한다.
+        path = '.....'  
+    elif sys.platform == 'win32':                             ## Windows 이름을 확인한다.
+        path = "font/MaplestoryBold.ttf"
+    else:
+        print('Unknown system... sorry~~~~') 
+    
+font_name = font_manager.FontProperties(fname=path).get_name()        ##  폰트가 있는지를 확인한다. 
+rc('font', family=font_name)                                          ## 한글 폰트를 시각화 환경에 세팅한다. 
+plt.rcParams['axes.unicode_minus'] = False 
+    
     
     matplotlib.pyplot.savefig('경로') - plot저장하기
     matplotlib.pyplot.plot(인덱스,값) - plot
