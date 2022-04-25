@@ -204,8 +204,10 @@ from selenium.webdriver.common.by import By
     rc('font', family=font_name)                                          ## 한글 폰트를 시각화 환경에 세팅한다. 
     plt.rcParams['axes.unicode_minus'] = False 
 
-  1
+  치트시트
+  [matplotlib-cheatsheet1.pdf](https://github.com/jyakler/big_python/files/8551121/matplotlib-cheatsheet1.pdf)
   
     matplotlib.pyplot.savefig('경로') - plot저장하기
     matplotlib.pyplot.plot(인덱스,값) - plot
     
+
