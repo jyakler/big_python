@@ -205,7 +205,8 @@ from selenium.webdriver.common.by import By
     plt.rcParams['axes.unicode_minus'] = False 
 
   치트시트
-  [matplotlib-cheatsheet1.pdf](https://github.com/jyakler/big_python/files/8551121/matplotlib-cheatsheet1.pdf)
+  
+![제목 없음](https://user-images.githubusercontent.com/49812691/165009322-20914cb8-7e60-4932-8af4-b16e7bcb01eb.png)
   
     matplotlib.pyplot.savefig('경로') - plot저장하기
     matplotlib.pyplot.plot(인덱스,값) - plot
