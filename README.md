@@ -207,7 +207,16 @@ from selenium.webdriver.common.by import By
   치트시트
   
 ![제목 없음](https://user-images.githubusercontent.com/49812691/165009322-20914cb8-7e60-4932-8af4-b16e7bcb01eb.png)
-  
+
+### plt.plot(*args, scalex=True, scaley=True, data=None, **kwargs)
+#### plot([x], y, [fmt], *, data=None, **kwargs)
+#### plot([x], y, [fmt], [x2], y2, [fmt2], ..., **kwargs)
+<span style="color:red">fmt = '[marker][line][color]'</span>
+##### plot(x, y)        # plot x and y using default line style and color
+##### plot(x, y, 'bo')  # plot x and y using blue circle markers
+##### plot(y)           # plot y using x as index array 0..N-1
+##### plot(y, 'r+')     # ditto, but with red plusses
+
     matplotlib.pyplot.savefig('경로') - plot저장하기
     matplotlib.pyplot.plot(인덱스,값) - plot
     
