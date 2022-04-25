@@ -187,6 +187,8 @@ from selenium.webdriver.common.by import By
     df.plot() / series.plot()- 그래프 작성
     plot.set_xticklabels()- x축이름 변경
     
-### matplotlib
+### matplotlib - 시각화 라이브러리 
     
     matplotlib.pyplot.savefig('경로') - plot저장하기
+    matplotlib.pyplot.plot(인덱스,값) - plot
+    
