@@ -200,11 +200,12 @@ from selenium.webdriver.common.by import By
     else:
         print('Unknown system... sorry~~~~') 
     
-font_name = font_manager.FontProperties(fname=path).get_name()        ##  폰트가 있는지를 확인한다. 
-rc('font', family=font_name)                                          ## 한글 폰트를 시각화 환경에 세팅한다. 
-plt.rcParams['axes.unicode_minus'] = False 
-    
-    
+    font_name = font_manager.FontProperties(fname=path).get_name()        ##  폰트가 있는지를 확인한다. 
+    rc('font', family=font_name)                                          ## 한글 폰트를 시각화 환경에 세팅한다. 
+    plt.rcParams['axes.unicode_minus'] = False 
+
+  1
+  
     matplotlib.pyplot.savefig('경로') - plot저장하기
     matplotlib.pyplot.plot(인덱스,값) - plot
     
