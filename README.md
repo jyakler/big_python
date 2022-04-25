@@ -184,7 +184,7 @@ from selenium.webdriver.common.by import By
     df['열이름'].value_counts() - 열이름 열의 고유 값의 개수 확인
 
     #plot
-    df.plot() / series.plot()- 그래프 작성
+    df.plot() / series.plot()- 그래프 작성 (바그래프일경우  matplotlib보다 이거쓰는게 편함)
     plot.set_xticklabels()- x축이름 변경
     
 ### matplotlib - 시각화 라이브러리 
@@ -221,3 +221,4 @@ from selenium.webdriver.common.by import By
     matplotlib.pyplot.plot(인덱스,값) - plot
     
 
+![mpl7](https://user-images.githubusercontent.com/49812691/165020010-bee49789-e0a1-4cb1-aa29-9218b540095c.png)
