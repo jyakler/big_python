@@ -241,7 +241,8 @@ from selenium.webdriver.common.by import By
                  ).add_to(map) #map 에다가 해당 choropleth를 추가
                  
         fmap=folium.Choropleth()...
-        fmap.geojson.zoom_on_click = False # 클릭 비활성화
+        fmap.geojson.zoom_on_click = False # 클릭 할때 줌인 안되게
         fmap.geojson.add_child(
              folium.features.GeoJsonTooltip(['name'],labels=False) #마우서 호버하였을때 정보 나오게
+             folium.features.GeoJsonPopup(['name'],labels=False) #마우스 클릭시 팝업 나오게
         )
