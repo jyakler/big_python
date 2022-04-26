@@ -239,3 +239,9 @@ from selenium.webdriver.common.by import By
                  key_on='', # 지도 데이터파일에서 데이터파일과 매핑할 값
                  legend_name=, # 칼라 범주 이름
                  ).add_to(map) #map 에다가 해당 choropleth를 추가
+                 
+        fmap=folium.Choropleth()...
+        fmap.geojson.zoom_on_click = False # 클릭 비활성화
+        fmap.geojson.add_child(
+             folium.features.GeoJsonTooltip(['name'],labels=False) #마우서 호버하였을때 정보 나오게
+        )
