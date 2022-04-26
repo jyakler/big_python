@@ -222,3 +222,11 @@ from selenium.webdriver.common.by import By
     
 
 ![mpl7](https://user-images.githubusercontent.com/49812691/165020010-bee49789-e0a1-4cb1-aa29-9218b540095c.png)
+
+## folium - 지도를 다루는 라이브러리 (leaflet.js기반)
+
+        map=folium.Map(location=[],zoom_start=숫자,tiles='') - 지도 만들기
+        display(map) - 지도 표시
+        map.save(경로.html) - 지도를 파일로 저장 
+        folium.Marker([위도,경도],popup=팝업).add_to(지도) - '지도'에 마커 추가 popup은 클릭했을때 뭐가 뜨게할건지 
+        folium.CircleMarker([위도,경도],radius=,color=,fill=True,fill_color=,fill_opacity=,popup=).add_to() - 원 마커 추가 
