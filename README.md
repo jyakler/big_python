@@ -230,3 +230,12 @@ from selenium.webdriver.common.by import By
         map.save(경로.html) - 지도를 파일로 저장 
         folium.Marker([위도,경도],popup=팝업).add_to(지도) - '지도'에 마커 추가 popup은 클릭했을때 뭐가 뜨게할건지 
         folium.CircleMarker([위도,경도],radius=,color=,fill=True,fill_color=,fill_opacity=,popup=).add_to() - 원 마커 추가 
+        
+        folium.Choropleth(geo_data=,    # 지도 경계
+                 data = ,      # 표시하려는 데이터
+                 columns = ,  # [지도 데이터와 매핑할 데이터, 시각화 하고려는 데이터]
+                 fill_color='YlOrRd', fill_opacity=0.7, line_opacity=0.3, #색 지정
+                 threshold_scale=[범위], #범주 스케일 지정             
+                 key_on='', # 지도 데이터파일에서 데이터파일과 매핑할 값
+                 legend_name=, # 칼라 범주 이름
+                 ).add_to(map) #map 에다가 해당 choropleth를 추가
