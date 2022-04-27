@@ -187,6 +187,18 @@ from selenium.webdriver.common.by import By
     df.plot() / series.plot()- 그래프 작성 (바그래프일경우  matplotlib보다 이거쓰는게 편함)
     plot.set_xticklabels()- x축이름 변경
     
+    #결측치 제거
+    df.dropna(axis=0,thresh=숫자) - na값이 숫자 이상 포함되어있는 axis=0(행) axis=1(열) 제거
+    df.fillna(method=) -결측치를 무엇으로 채울지
+    
+    #중복값 찾기
+    df.duplicated() -중복되있는 행은 true로 반환
+    df.drop_duplicates(subset=[]) - 중복값 제거 (subset기준으로 중복행 제거)
+    
+    #자료형 변환
+    df.astype(자료형)
+    
+
 ### matplotlib - 시각화 라이브러리 
    한글폰트 등록예시
    
