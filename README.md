@@ -216,10 +216,11 @@ from selenium.webdriver.common.by import By
     df.applymap(함수) - 데이터프레임에 함수 적용
     df.apply(함수,axis=0) -axis=0(열) axis=1(행) 
     df.pipe(함수) - 데이터프레임 !객체! 에 함수전달
+   #### map
    ![map](https://user-images.githubusercontent.com/49812691/165461456-1a432a3c-7b9d-4e01-9b28-cadbb5fccc3c.jpg)
-   
+   #### applymap
    ![applymap](https://user-images.githubusercontent.com/49812691/165461577-cf436cb8-b7fa-4fc7-81bc-9fdd72dd1fc0.jpg)
-
+   #### apply
    ![apply](https://user-images.githubusercontent.com/49812691/165461595-744a05c6-20b2-4cfe-aac0-0edb67adac7c.jpg)
 
 ### numpy
