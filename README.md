@@ -211,8 +211,19 @@ from selenium.webdriver.common.by import By
     타임스탬프.to_period(freq=단위) - timestamp 를 period로 변환
     pd.date_range(시작날짜,periods=몇개,freq=단위,tz=시간대) - 배열형태의 시간데이터 만들기
     
-    
+    #함수 매핑
+    series.apply(매핑함수) - 시리즈에 함수 적용
+    df.applymap(함수) - 데이터프레임에 함수 적용
+    df.apply(함수,axis=0) -axis=0(열) axis=1(행) 
+    df.pipe(함수) - 데이터프레임 !객체! 에 함수전달
+   ![map](https://user-images.githubusercontent.com/49812691/165461456-1a432a3c-7b9d-4e01-9b28-cadbb5fccc3c.jpg)
+   
+   ![applymap](https://user-images.githubusercontent.com/49812691/165461577-cf436cb8-b7fa-4fc7-81bc-9fdd72dd1fc0.jpg)
+
+   ![apply](https://user-images.githubusercontent.com/49812691/165461595-744a05c6-20b2-4cfe-aac0-0edb67adac7c.jpg)
+
 ### numpy
+
     count,경계값리스트 = np.histogram(df,bins=3) - df를 3개의 bins으로 구분할 경계값의 리스트 구하기(3개를 나눠서 4개의 값이 나옴)
     
     
