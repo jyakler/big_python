@@ -198,7 +198,21 @@ from selenium.webdriver.common.by import By
     #자료형 변환
     df.astype(자료형)
     
-
+    #데이터 분할
+    result=pd.cut(x=df,
+                  bins=[경계값리스트],
+                  labels=[bin 이름],
+                  include_lowest=True) - 첫 경계값 포함
+                  
+    #더미 변수
+    pd.get_dummies(df) - 범주형 데이터를 더미변수로 변환
+    
+    
+### numpy
+    count,경계값리스트 = np.histogram(df,bins=3) - df를 3개의 bins으로 구분할 경계값의 리스트 구하기(3개를 나눠서 4개의 값이 나옴)
+    
+    
+    
 ### matplotlib - 시각화 라이브러리 
    한글폰트 등록예시
    
