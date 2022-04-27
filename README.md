@@ -207,6 +207,10 @@ from selenium.webdriver.common.by import By
     #더미 변수
     pd.get_dummies(df) - 범주형 데이터를 더미변수로 변환
     
+    #날짜
+    타임스탬프.to_period(freq=단위) - timestamp 를 period로 변환
+    pd.date_range(시작날짜,periods=몇개,freq=단위,tz=시간대) - 배열형태의 시간데이터 만들기
+    
     
 ### numpy
     count,경계값리스트 = np.histogram(df,bins=3) - df를 3개의 bins으로 구분할 경계값의 리스트 구하기(3개를 나눠서 4개의 값이 나옴)
