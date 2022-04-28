@@ -229,9 +229,18 @@ from selenium.webdriver.common.by import By
     #데이터 집계
     group객체.mean()
     max/min/sum/count/size/var/std/describe/info/first/last
-    agg(사용자정의함수) - 사용자 정의함수를 적용하고싶을때 사용
+    agg(사용자정의함수) - 사용자 정의함수를 적용하고싶을때 사용 -집계연산
+    transform()
+    filter(조건) - 조건이 참인 그룹만 남김
+    apply()- 매핑함수를 개별원소에 일대일로 매핑
 
+    #검색
+    group객체.xs(찾을이름, level=칼럼이름) - 칼럼에서 찾을이름을 검색함
+    
+   #### pivot
+   ![pivot_table](https://user-images.githubusercontent.com/49812691/165674321-6b6acf92-e8e6-4e3d-aeda-a9c85a3e2348.jpg)
 
+   
 ### numpy
 
     count,경계값리스트 = np.histogram(df,bins=3) - df를 3개의 bins으로 구분할 경계값의 리스트 구하기(3개를 나눠서 4개의 값이 나옴)
