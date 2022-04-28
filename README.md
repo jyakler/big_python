@@ -306,3 +306,7 @@ from selenium.webdriver.common.by import By
              folium.features.GeoJsonTooltip(['name'],labels=False) #마우서 호버하였을때 정보 나오게
              folium.features.GeoJsonPopup(['name'],labels=False) #마우스 클릭시 팝업 나오게
         )
+
+## seaborn
+
+    heatmap() - 히트맵
