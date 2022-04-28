@@ -223,6 +223,15 @@ from selenium.webdriver.common.by import By
    #### apply
    ![apply](https://user-images.githubusercontent.com/49812691/165461595-744a05c6-20b2-4cfe-aac0-0edb67adac7c.jpg)
 
+    #그룹화
+    df.groupby(기준이되는열)- 열기준으로 그룹화
+    
+    #데이터 집계
+    group객체.mean()
+    max/min/sum/count/size/var/std/describe/info/first/last
+    agg(사용자정의함수) - 사용자 정의함수를 적용하고싶을때 사용
+
+
 ### numpy
 
     count,경계값리스트 = np.histogram(df,bins=3) - df를 3개의 bins으로 구분할 경계값의 리스트 구하기(3개를 나눠서 4개의 값이 나옴)
