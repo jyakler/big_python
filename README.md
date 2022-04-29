@@ -317,3 +317,11 @@ from selenium.webdriver.common.by import By
 ## seaborn
 
     heatmap() - 히트맵
+    중요! relplot()
+        https://seaborn.pydata.org/generated/seaborn.relplot.html
+    중요! catplot(x,y,hue,data,kind='',...)
+        https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot
+    
+## Image   (PIL 패키지)
+
+    Image.open('사진.JPG') - 이미지 파일 읽어오기
