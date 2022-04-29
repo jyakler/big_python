@@ -334,6 +334,14 @@ from selenium.webdriver.common.by import By
 ### 형태소 분석 - konlpy,Hannanum,Okt 패키지
 from konlpy.tag import Okt,Hannanum,konlpy
 
-- Okt
+### 워드클라우드 WordCloud
     
-    
+    wc = WordCloud(                        ## 워드클라우드 객체를 만들때 한글로 출력되도록 객체를 만든다 
+        font_path = 폰트경로,
+        width = 200,
+        height = 200,
+        background_color='색',                     ## 배경색을 지정한다 
+        colormap = "hsv"
+    )
+    wc = wc.generate(text) ##워드클라우드 생성
+    plt.imshow(wc) ##워드클라우드 이미지로 출력
