@@ -325,3 +325,8 @@ from selenium.webdriver.common.by import By
 ## Image   (PIL 패키지)
 
     Image.open('사진.JPG') - 이미지 파일 읽어오기
+
+# 문자열
+
+![string1](https://user-images.githubusercontent.com/49812691/165894898-d0a6a651-2c7e-4785-8c11-9dc31269caea.jpg)
+
