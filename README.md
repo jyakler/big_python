@@ -338,10 +338,12 @@ from konlpy.tag import Okt,Hannanum,konlpy
     
     wc = WordCloud(                        ## 워드클라우드 객체를 만들때 한글로 출력되도록 객체를 만든다 
         font_path = 폰트경로,
+        stopwords=불용어 집합,              ## 불용어= 분석에 사용하지않을 단어
         width = 200,
         height = 200,
         background_color='색',                     ## 배경색을 지정한다 
-        colormap = "hsv"
+        colormap = "hsv",
+        mask=       ##마스크인자에 이미지 전달 가능
     )
     wc = wc.generate(text) ##워드클라우드 생성
     plt.imshow(wc) ##워드클라우드 이미지로 출력
