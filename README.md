@@ -330,3 +330,10 @@ from selenium.webdriver.common.by import By
 
 ![string1](https://user-images.githubusercontent.com/49812691/165894898-d0a6a651-2c7e-4785-8c11-9dc31269caea.jpg)
 
+
+### 형태소 분석 - konlpy,Hannanum,Okt 패키지
+from konlpy.tag import Okt,Hannanum,konlpy
+
+- Okt
+    
+    
