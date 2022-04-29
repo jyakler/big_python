@@ -238,6 +238,12 @@ from selenium.webdriver.common.by import By
     group객체.xs(찾을이름, level=칼럼이름) - 칼럼에서 찾을이름을 검색함
     
    #### pivot
+       pdf1 = pd.pivot_table(df,              # 피벗할 데이터프레임
+                         index='',    # 행 위치에 들어갈 열
+                         columns='',    # 열 위치에 들어갈 열
+                         values='',     # 데이터로 사용할 열
+                         aggfunc='')   # 데이터 집계 함수(디폴트)
+                     
    ![pivot_table](https://user-images.githubusercontent.com/49812691/165674321-6b6acf92-e8e6-4e3d-aeda-a9c85a3e2348.jpg)
 
    
