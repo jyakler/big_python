@@ -322,7 +322,7 @@ from selenium.webdriver.common.by import By
     중요! catplot(x,y,hue,data,kind='',...)
         https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot
     
-## Image   (PIL 패키지)
+## Image   (PIL 라이브러리)
 
     Image.open('사진.JPG') - 이미지 파일 읽어오기
 
@@ -354,6 +354,8 @@ https://www.ranks.nl/stopwords/korean
 
 # sklearn
 from sklearn.feature_extraction.text import CountVectorizer -단어의 빈도를 Count하여 Vector로 만드는 CountVectorizer
+
+from sklearn.metrics.pairwise import cosine_similarity - 유사도 분석
 
 tf tfidf dtm tdm    
 
