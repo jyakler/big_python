@@ -347,3 +347,13 @@ from konlpy.tag import Okt,Hannanum,konlpy
     )
     wc = wc.generate(text) ##워드클라우드 생성
     plt.imshow(wc) ##워드클라우드 이미지로 출력
+
+### 불용어 참고사이트
+https://www.ranks.nl/stopwords/korean
+
+
+# sklearn
+from sklearn.feature_extraction.text import CountVectorizer -단어의 빈도를 Count하여 Vector로 만드는 CountVectorizer
+
+tf tfidf dtm tdm    
+
