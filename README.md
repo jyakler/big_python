@@ -357,6 +357,9 @@ https://www.ranks.nl/stopwords/korean
 
 
 # sklearn
+![sklearn1](https://user-images.githubusercontent.com/49812691/166407965-fa2166b7-1cec-409a-85cc-fbb4990d2ae0.png)
+
+
 from sklearn.feature_extraction.text import CountVectorizer -단어의 빈도를 Count하여 Vector로 만드는 CountVectorizer
 
 from sklearn.metrics.pairwise import cosine_similarity - 유사도 분석
