@@ -385,3 +385,9 @@ tf tfidf dtm tdm
     - classfication_report(y_true, y_pred)
     - roc_curve
     - auc
+
+## 군집
+_주의점_
+
+![캡처](https://user-images.githubusercontent.com/49812691/166422175-51c9266f-39c7-4a3c-9712-e09fcdd63457.PNG)
+
