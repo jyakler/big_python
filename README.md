@@ -375,7 +375,7 @@ tf tfidf dtm tdm
     classes_ : 인코딩한 클래스(레벨) 조회
     
 ### sklearn.metrics
-정확도, 정밀도, 재현율, 오차행렬, F1 스코어, ROC, AUC
+정확+정밀,정확도, 정밀도, 재현율, 오차행렬, F1 스코어, ROC, AUC
 
     - confusion_matrix(y_true, y_pred)
     - accuracy_score(y_true, y_pred)
@@ -385,6 +385,8 @@ tf tfidf dtm tdm
     - classfication_report(y_true, y_pred)
     - roc_curve
     - auc
+
+불균형한 dataset가 있으면 정확정밀도가 떨어짐
 
 ## 군집
 _주의점_
