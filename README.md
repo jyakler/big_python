@@ -216,6 +216,10 @@ from selenium.webdriver.common.by import By
     df.applymap(함수) - 데이터프레임에 함수 적용
     df.apply(함수,axis=0) -axis=0(열) axis=1(행) 
     df.pipe(함수) - 데이터프레임 !객체! 에 함수전달
+    
+    #결측값 보간
+    df.interpolate() - ex) 1 na na 7 -> 1 3 5 7  - limit_direction= 'forward/backward/both'
+    
    #### map
    ![map](https://user-images.githubusercontent.com/49812691/165461456-1a432a3c-7b9d-4e01-9b28-cadbb5fccc3c.jpg)
    #### applymap
@@ -357,5 +361,14 @@ from sklearn.feature_extraction.text import CountVectorizer -단어의 빈도를
 
 from sklearn.metrics.pairwise import cosine_similarity - 유사도 분석
 
-tf tfidf dtm tdm    
+tf tfidf dtm tdm 
 
+### sklearn.preprocessing.LabelEncoder 사용
+
+    fit() : 어떻게 변환할 지 학습
+    transform(): 문자열를 숫자로 변환
+    fit_transform() : 학습과 변환을 한번에 처리 (fit + transform)
+    inverse_transform() : 숫자를 문자열로 변환
+    classes_ : 인코딩한 클래스(레벨) 조회
+    
+0
