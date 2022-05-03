@@ -366,7 +366,7 @@ from sklearn.metrics.pairwise import cosine_similarity - 유사도 분석
 
 tf tfidf dtm tdm 
 
-### sklearn.preprocessing.LabelEncoder 사용
+### sklearn.preprocessing 
 
     fit() : 어떻게 변환할 지 학습
     transform(): 문자열를 숫자로 변환
@@ -374,4 +374,14 @@ tf tfidf dtm tdm
     inverse_transform() : 숫자를 문자열로 변환
     classes_ : 인코딩한 클래스(레벨) 조회
     
-0
+### sklearn.metrics
+정확도, 정밀도, 재현율, 오차행렬, F1 스코어, ROC, AUC
+
+    - confusion_matrix(y_true, y_pred)
+    - accuracy_score(y_true, y_pred)
+    - precision_score(y_true, y_pred)
+    - recall_score(y_true, y_pred)
+    - f1_score(y_true, y_pred)
+    - classfication_report(y_true, y_pred)
+    - roc_curve
+    - auc
