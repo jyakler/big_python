@@ -391,3 +391,10 @@ _주의점_
 
 ![캡처](https://user-images.githubusercontent.com/49812691/166422175-51c9266f-39c7-4a3c-9712-e09fcdd63457.PNG)
 
+스케일링
+
+![캡처](https://user-images.githubusercontent.com/49812691/166422581-c752f16d-0997-40d4-8b97-13ea6c486f52.PNG)
+
+
+
+
